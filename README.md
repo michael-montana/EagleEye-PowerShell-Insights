@@ -238,3 +238,6 @@ But hey, what's the fun without a little chaos, right? 😎
 # 📜 License
 
 EagleEye-PowerShell-Insights is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
+
+## Disclaimer
+This project uses **Microsoft Application Insights** for monitoring and telemetry. All rights to **Microsoft Application Insights** and its associated services belong to Microsoft. This project does not claim ownership of any third-party services or APIs used.
