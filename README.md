@@ -51,7 +51,8 @@ EagleEye-PowerShell-Insights gives you the full monitoring experience with a vis
 
 ## 📸 Screenshots (because pictures speak louder than words)
 
-
+![Network](images/Example_Recursive2.png)
+![Flow](images/Example_Recursive.png)
 
 ## ⚙️ Prerequisites
 1. A Microsoft Azure account with an Application Insights instance.
