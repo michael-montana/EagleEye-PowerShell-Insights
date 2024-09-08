@@ -18,7 +18,7 @@ This example shows how to use the function to send an exception log to Applicati
 
 .NOTES
 Author: Michael Montana
-Email: michael_montana@outlook.com
+GitHub: https://github.com/michael-montana
 #>
 function Send-EEAppInsExceptionLog(){
     param(

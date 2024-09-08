@@ -18,7 +18,7 @@ This example shows how to use the function to send a dependency log to Applicati
 
 .NOTES
 Author: Michael Montana
-Email: michael_montana@outlook.com
+GitHub: https://github.com/michael-montana
 #>
 function New-EEAppInsDependency(){
     param(

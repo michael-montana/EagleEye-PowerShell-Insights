@@ -18,7 +18,7 @@ This example shows how to use the function to confirm the availability of a depe
 
 .NOTES
 Author: Michael Montana
-Email: michael_montana@outlook.com
+GitHub: https://github.com/michael-montana
 #>
 function Confirm-EEDependencyEndpoint {
     [CmdletBinding()]

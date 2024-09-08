@@ -21,7 +21,7 @@ This example shows how to use the function to create a new Application Insights 
 
 .NOTES
 Author: Michael Montana
-Email: michael_montana@outlook.com
+GitHub: https://github.com/michael-montana
 #>
 function New-EEAppInsActivity (){
     param(    

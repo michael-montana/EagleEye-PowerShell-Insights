@@ -21,7 +21,7 @@ This example shows how to use the function to write a large log.
 
 .NOTES
 Author: Michael Montana
-Email: michael_montana@outlook.com
+GitHub: https://github.com/michael-montana
 #>
 function Write-EELog(){
     param(

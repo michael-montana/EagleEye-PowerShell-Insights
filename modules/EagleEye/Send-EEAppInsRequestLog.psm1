@@ -15,7 +15,7 @@ This example shows how to use the function to send a request log to Application 
 
 .NOTES
 Author: Michael Montana
-Email: michael_montana@outlook.com
+GitHub: https://github.com/michael-montana
 #>
 function Send-EEAppInsRequestLog(){
     param(

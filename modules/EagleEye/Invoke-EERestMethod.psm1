@@ -25,7 +25,7 @@ Invoke-EERestMethod -Uri 'https://api.example.com' -Method 'GET' -Headers @{'Aut
 
 .NOTES
 Author: Michael Montana
-Email: michael_montana@outlook.com
+GitHub: https://github.com/michael-montana
 #>
 function Invoke-EERestMethod(){
     param(
