@@ -1,25 +1,30 @@
-$currentFunctionName = "ExampleUsage_MainRun"
+Get-ChildItem -Path "examples" -Filter *.psm1 -Recurse | ForEach-Object {
+    Import-Module $_.FullName
+}
+
+###############
+##  Set Application Insights Variables
+###############
+Write-Host "Load Application Insights Modules"
+$currentFunctionName = "ExampleUsage_Simple_MainRun.ps1"
 $ENV:APPLICATIONINSIGHTS_CONNECTION_STRING = "InstrumentationKey=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx;IngestionEndpoint=https://example-0.in.applicationinsights.azure.com/;LiveEndpoint=https://example.livediagnostics.monitor.azure.com/;ApplicationId=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
-
-# Import the modules in the modules folder and all subfolders
+###############
+##  Load Application Insights Modules
+###############
+Write-Host "Load Application Insights Modules"
 Get-ChildItem -Path "modules" -Filter *.psm1 -Recurse | ForEach-Object {
     Import-Module $_.FullName
 }
 
 ###############
-##
 ##  Initialize Application Insights Request Activity
-##
 ###############
 Write-Host "Initialize Application Insights Request Activity"
-
 $AppInsRootRequestActivity = New-EEAppInsActivity -CloudRoleName $currentFunctionName -AppInsParentActivity $null -CloudRoleInstance $env:computername
 
 ###############
-##
 ##  Verifying if dependencies services are available.
-##
 ###############
 Write-EELog "Verifying if dependencies services are available." -delimiterSize "large" -AppInsRequestActivity $AppInsRootRequestActivity
 
